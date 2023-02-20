@@ -1,0 +1,49 @@
+CREATE TABLE Book (
+    IdBook int  NOT NULL,
+    Title varchar(50)  NOT NULL,
+    Description varchar(500)  NOT NULL,
+	Author varchar(100) Not null,
+    releaseYear int  NOT NULL,
+    CONSTRAINT Book_pk PRIMARY KEY  (IdBook)
+);
+
+
+insert into Book values(1,'Kongres futurologiczny','„Kongres Futurologiczny” to wielopoziomowa opowieść o losach, jakie kiedyś mogą czekać świat. Główny bohater, Ijon Tichy, przyjeżdża na tytułowy kongres do latynoamerykańskiego państwa, borykającego się z problemem wewnętrznych niestabilności społecznych.'
+,'Stanisław Lem',1970);
+
+insert into Book values(2,'Komu bije dzwon'
+,'Obok opowiadania Stary człowiek i morze jest uważana za najważniejsze dzieło autora. Opowiada o oddziale partyzanckim walczącym po stronie republikanów podczas hiszpańskiej wojny domowej (1936–1939). Jest studium psychologicznym człowieka będącego świadkiem okrucieństw wojny.',
+'Ernest Hemingway'
+,1940);
+
+insert into book values(3,'Pamiętnik znaleziony w wannie'
+,' to jedna z najbardziej zagadkowych publikacji Lema. To zabawna satyra na temat nowoczesnego świata wywiadu, który jest przeżarty wiarołomstwem. Dla uważnego Czytelnika nie będzie problemem znalezienie tu odniesień to totalitarnego państwa i jego krytyki.',
+'Stanislaw Lem',1961);
+
+insert into book values(4,'Perfekcyjna niedoskonałość'
+,'32 min. Jest XXIX wiek. Adam Zamoyski, tajemniczy zmartwychwstaniec, tkwi w środku rozgrywki między cywilizacjami, ludźmi, nieludźmi i istotami postludzkimi. Konkurencja stanowi motor ewolucji - konkurują ze sobą rośliny, zwierzęta, ludzie, kultury, gospodarki.',
+'Jacek Dukaj'
+,2004);
+
+insert into book values(5,'Xavras wyżryn'
+,'owieść Xavras Wyżryn należy do popularnego gatunku "historii altrnatywnych". W 1920 roku Polska przegrała wojnę z bolszewikami. Kilkadziesiąt lat później partyzanci z Armii Wyzwolenia Polski pod wodzą samozwańczego pułkownika Xavrasa Wyżyna usiłują wyzwolić kraj spod sowieckiej dominacji.',
+'Jacek Dukaj'
+,2009);
+
+insert into book values(6,'Limes inferior','Limes inferior (łac. dolna granica) – powieść Janusza A. Zajdla, twórcy nurtu fantastyki socjologicznej w Polsce. Została napisana w latach 1979-1980.',
+'Janusz Andrzej Zajdel'
+,1982);
+
+insert into book values(7,'Gra Endera','Gra Endera - powstała w 1985 roku. Jest z gatunku science fiction o tematyce wojskowej, powieść amerykańskiego pisarza Orsona Scotta Carda. Akcja trwa w przyszłości Ziemi, powieść przedstawia zagrożoną ludzkość przez konflikt z "robalami " insektoidalnych gatunków obcych.',
+'Orson Scott Card',1985)
+
+insert into book values(8,'Diuna','Akcja powieści dzieje się w fantastycznym świecie przyszłości. Najważniejsza planeta w tym wszechświecie to Arrakis (Diuna), jedyna, na której znajdują się złoża melanżu – substancji umożliwiającej jasnowidzenie niezbędne do uniknięcia niebezpieczeństw ponadwymiarowych podróży kosmicznych.',
+'Frank Herbert',1965);
+
+insert into book values(9,'Hamlet','Hamlet to tytułowy bohater dramatu Williama Szekspira. Syn króla Danii i królowej Gertrudy. Był przystojny, zadbany, kochający, wrażliwy, odrzucał wszelkie zło, przemoc i zemstę. Cieszył się powodzeniem u pięknej Ofelii.'
+,'William Shakespeare',1603);
+
+insert into book values(10,'Ukochane równanie profesora'
+,'To niepozorna książeczka, Yõko Ogawy, w której autor przedstawia losy Pierwiastka oraz jego mamy, gosposi u wybitnego profesora, który w wyniku wypadku traci pamięć co 80 minut. Matematyka jest jego absolutną pasją do tego stopnia, że cały świat postrzega w kontekście liczb.',
+'Yoko Ogawa',
+2019);
