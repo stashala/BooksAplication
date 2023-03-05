@@ -1,4 +1,5 @@
 package Servlets;
+
 import Models.Book;
 import Models.BookDao;
 import jakarta.servlet.*;
@@ -15,31 +16,18 @@ public class BookAuthorServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-
         request.getRequestDispatcher("/WEB-INF/author.jsp").forward(request, response);
-
     }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-
-
-        String value=request.getParameter("description");
-
+        String value = request.getParameter("description");
         List<Book> allBookss = recipeDao.findByAuthor(value);
-
-        if(allBookss.isEmpty()){
-
+        if (allBookss.isEmpty()) {
             response.sendRedirect("http://localhost:8080/BooksAplication/null");
-
-        }else {
-
+        } else {
             request.setAttribute("book", allBookss);
-
             request.getRequestDispatcher("/WEB-INF/all.jsp").forward(request, response);
         }
-
     }
 }

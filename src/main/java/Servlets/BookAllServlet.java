@@ -15,20 +15,14 @@ public class BookAllServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-
         List<Book> allBookss = recipeDao.findAll();
-
-
-
-        request.setAttribute("book",allBookss);
+        request.setAttribute("book", allBookss);
         request.getRequestDispatcher("/WEB-INF/all.jsp").forward(request, response);
-
-
 
     }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-    }}
+    }
+}

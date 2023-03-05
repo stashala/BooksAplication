@@ -8,7 +8,6 @@ public class Book {
     private int releaseYear;
 
     public Book( String title, String description, String author, int releseYear) {
-
         this.title = title;
         this.description = description;
         this.author = author;
@@ -18,7 +17,6 @@ public class Book {
         this(title,description,author,releseYear);
         this.idBook=id;
     }
-
 
     @Override
     public String toString() {

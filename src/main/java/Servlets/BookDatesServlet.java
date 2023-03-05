@@ -23,24 +23,14 @@ public class BookDatesServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
         int value= Integer.parseInt(request.getParameter("date1"));
         int value2= Integer.parseInt(request.getParameter("date2"));
-
-
         List<Book> allBookss = recipeDao.findByDates(value,value2);
-
         if(allBookss.isEmpty()){
-
             response.sendRedirect("http://localhost:8080/BooksAplication/null");
-
         }else {
-
             request.setAttribute("book", allBookss);
-
             request.getRequestDispatcher("/WEB-INF/all.jsp").forward(request, response);
-
         }
-
     }
 }
