@@ -16,9 +16,6 @@ import java.util.List;
 
 public class BookDao {
     private final DataSource dataSource;
-
-
-
     public BookDao() {
         try {
             this.dataSource = DataSourceProvider.getDataSource();
