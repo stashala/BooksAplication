@@ -1,10 +1,7 @@
 package Models;
 
-
-
 import Servlets.BookController;
 import Source.DataSourceProvider;
-
 import javax.naming.NamingException;
 import javax.sql.DataSource;
 import java.sql.Connection;

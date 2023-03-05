@@ -1,15 +1,12 @@
 package Servlets;
 
-
 import Models.Book;
 import Models.BookDao;
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
-
 import java.io.IOException;
 import java.util.List;
-
 
 @WebServlet("/dates")
 public class BookDatesServlet extends HttpServlet {
